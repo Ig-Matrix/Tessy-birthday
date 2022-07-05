@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+body {
+    background: white;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: 'Courgette', cursive;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('./chi.jpeg');
+}
+
+.card {
+    border-radius: 10px;
+    color: black;
+    height: 85vh;
+    width: 80vw;
+    box-shadow: 0 3px 6px rgba(51, 21, 21, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    overflow: hidden;
+    font-family: 'Courgette', cursive;
+    background: url(./chi.jpeg);
+    background-size: contain;
+}
+
+h1 {
+    font-size: 46px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .card {
+        flex-direction: row-reverse;
+    }
+}
+
+@media only screen and (max-height: 640px) {
+    .card {
+        flex-direction: row-reverse;
+        background-image: url('./IMG-20220705-WA0020.jpg');
+        background-size: contain;
+    }
+    .card .img-container img.birthday {
+        width: 80%;
+        max-width: 50vw;
+        max-height: unset;
+    }
+}
+
+img.birthday {
+    max-height: 40vh;
+}
+
+.text {
+    padding: 1em;
+}
+
+.muted {
+    margin-bottom: 80px;
+    opacity: 0.8;
+    font-weight: 600;
+
+}
+
+.space {
+    height: 100px;
+}
